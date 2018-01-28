@@ -1,0 +1,249 @@
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+body {
+    background-color: #fff;
+}
+#page-wrapper{
+	max-width:100%;
+}
+#masthead {
+	padding: 0 35px 0 35px;
+}
+.full-containter {
+	position: relative;
+	height: 150px;
+	max-width: 100%;
+}
+
+/* Navigation menu*/
+.nav_bar {
+	padding: 10px;
+	height: 60px;
+	margin-top: 10px;
+	float: left;
+
+}
+
+.menu-button {
+	float: left;
+	position: relative;
+	top: 50%;
+	transform: translate (0,50%);
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+    border: none;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+	position: absolute;
+    background-color: #2980B;
+    min-width: 160px;
+	margin-left: 50%;
+	margin-right: auto;
+	transform: translate(-50%, 0)
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: inherit;
+	padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+	font-size: 120%;
+	z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover .dropdown-content a:focus {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button in drop-down menu*/
+.in-menu{
+	font-size: 120%;
+	border: none;
+	background-color: white;
+	text-align: center;
+	padding: 10px 30px;
+}
+
+.dropdown-submenu {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Drop down submenu*/
+.dropdown-submenu-content {
+    display: none;
+	position: absolute;
+    background-color: #2980B;
+    min-width: 300px;
+	margin-left: 50%;
+	margin-right: auto;
+	padding: 0 30px 10px 30px;
+}
+
+.dropdown-submenu-content a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font-size: 120%;
+	z-index: 2;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+    display: block;
+}
+
+#Search{
+		display:none;
+}
+
+#title{
+	display: block; 
+	float: left; 
+	width: 850px; 
+	font-size: 250%; 
+	padding: 10px 0; 
+	margin-right: 15px;                                   
+}
+
+/*Search */
+
+.search-icon{
+
+}
+.search-form {
+	display:block;
+	background-color: #f9f9f9;
+	max-width: 100%;
+	clear: both;
+}
+.field {
+	width: 100%;
+	background-color: #f9f9f9;
+	border: 0;
+	font-size:15px;
+	line-height: 2em;
+}
+
+/*Page */
+.site-main {
+	padding: 0 35px 0 35px;
+}
+#primary {
+	float: left;
+    width: 80%;
+}
+#secondary {
+	display: block;
+	float: right;
+    width: 20%;	
+}
+.sidebar-custom_el{
+}
+.widget_text{
+	margin-bottom: 40px;
+	font-size: 13px;
+	line-height: 2em;
+	text-align: center;
+}
+.text-tags{
+	margin-top: 15px;
+	line-height: 2em;
+	font-size: 13px;
+}
+.tag-link{
+	font-size: 10px;
+}
+.menu{
+	display: block;
+	height: 80px;
+	margin: 0 80px 20px 80px;
+}
+.menu-button-text{
+	display: inline-block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	width: 25%;
+	float: left;
+	padding: 25px;
+	color: black;
+}
+
+/* Footer*/
+.site-footer{
+	max-width:100%;
+	height: 300px;
+	/*background-color: #231f20;*/
+	clear: both;
+}
+
+.hr_footer{
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+.footer-custom{
+	display: inline-block;
+	height: 300px;
+	float: left;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 15px;
+
+	/*color: white;*/
+}
+.el{
+	width: 20%;
+	text-align: left;
+	margin-left: 30px;
+}
+.logo{
+	width: 40%;
+	float: right;
+	margin-top: 0px;
+}
+/* Footer*/
+/* Consistent fonts across all elements */
+body,
+button,
+input,
+select,
+textarea {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: ;
+  font-size: ;
+}
+
+
