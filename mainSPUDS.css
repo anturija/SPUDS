@@ -180,7 +180,9 @@ body {
 	margin-top: 15px;
 	line-height: 2em;
 	font-size: 13px;
+	color: black;
 }
+	
 .tag-link{
 	font-size: 10px;
 }
