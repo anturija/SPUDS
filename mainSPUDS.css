@@ -187,9 +187,10 @@ body {
 	height: 20px;
 	border-top: 1px solid red;
 	padding-left: 3%;
-	padding-right: 12%;
+	padding-right: 15%;
 	clear: none; 
 	position: relative; 
+	max-width: 75%;
 
 }
 
