@@ -1,12 +1,5 @@
 html {
   font-size: 62.5%;
-  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-  overflow-y: scroll;
-  /* Keeps page centred in all browsers regardless of content height */
-  -webkit-text-size-adjust: 100%;
-  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-  -ms-text-size-adjust: 100%;
-  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 
 body {
@@ -14,6 +7,7 @@ body {
 }
 #page-wrapper{
 	max-width:100%;
+	font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
 }
 #masthead {
 	padding: 0 35px 0 35px;
@@ -29,6 +23,7 @@ body {
 	padding: 10px;
 	max-height: 60px;
 	margin-top: 10px;
+	margin-bottom:40px;
 	float: left;
 	box-sizing: border-box;
 
@@ -78,6 +73,7 @@ body {
 	font-size: 120%;
 	z-index: 1;
 	box-sizing: border-box;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -101,6 +97,7 @@ body {
 	position: relative;
 	display: inline-block;
 	text-align: center;
+	background-color: white;
 }
 
 /* Drop down submenu*/
@@ -113,6 +110,7 @@ body {
 	margin-right: auto;
 	padding: 0 30px 10px 30px;
 	box-sizing: border-box;
+	background-color: white;
 }
 
 .dropdown-submenu-content a {
@@ -122,6 +120,7 @@ body {
     text-align: left;
 	font-size: 120%;
 	z-index: 2;
+	background-color: white;
 }
 
 .dropdown-submenu:hover .dropdown-submenu-content {
@@ -135,7 +134,7 @@ body {
 #title{
 	display: block; 
 	float: left; 
-	width: 850px; 
+	max-width: 750px; 
 	font-size: 250%; 
 	padding: 10px 0; 
 	margin-right: 15px; 
@@ -162,15 +161,19 @@ body {
 }
 
 /*Page */
-.site-main {
-	padding: 0 35px 0 35px;
+#site-main {
+	padding: 20px 35px 0 35px;
 	box-sizing: border-box;
+	display: block;
+	display: block;
+	position: relative;
+	overflow: hidden;
 }
 #primary {
 	float: left;
     width: 75%;
+	margin-left: 10px;
 	margin-bottom: 25px;
-	overflow: auto;
 	display: inline-block;
 	clear: both;
 	max-height: 70%;
@@ -178,7 +181,7 @@ body {
 
 .content-area {
 	position: relative;
-	float:left;
+	float: left;
 	display: block;
 	margin-top: 20px;
 }
@@ -186,21 +189,29 @@ body {
 .hr_main{
 	height: 20px;
 	border-top: 1px solid red;
-	padding-left: 3%;
-	padding-right: 15%;
 	clear: none; 
-	position: relative; 
-	max-width: 75%;
+	position: absolute; 
+	right: 0;
+	width: 100%;
+
 
 }
 
 .hr_main a {
-	background-color: white; 
-	padding: 2px;
-	margin-left: 10%;
-	font-size: 15px;
+	background-color: white;	
+	padding: 2px 15px 0 15px;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 1.5em;
 	color: black;
 	box-sizing: border-box;
+	z-index:3;
+	font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
+	text-transform: uppercase;
+}
+
+#top{
+	margin-top: 40px;
 }
 
 .content{
@@ -210,21 +221,148 @@ body {
 	margin-top: 20px;
 	padding: 10px;
 	box-sizing: border-box;
+	width:100%;
 }
 
 .content {
+	font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
 	font-size: 12px;
 }
+
+/*lists*/
+.content p{
+	line-height: 150%;	
+	text-align: justify;
+}
+
+.list{
+	color: ;
+}
+
+.title-type-el{
+	font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
+	font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+	color: #444;
+}
+
+.conf-name {
+	border-bottom: 1px solid;
+}
+
+.title-el{
+	font-family: "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", georgia, serif;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+	
+.date el{
+	font-size: 1.2em;
+	
+}
+
+.place-el{
+	font-family: "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", georgia, serif;
+}
+
+
+/*link in lists formating*/
+/* unvisited link */
+.content a:link {
+    color: #5A5859;
+}
+
+/* visited link */
+.content a:visited {
+    color: #E1DFDF;
+}
+
+/* mouse over link */
+.content a:hover {
+    color: #262526;
+}
+
+/* selected link */
+.content a:active {
+    color: #5A5859;
+}
+
+/*special characters*/
+.special_car{
+	color: #C5C3C3;
+}
+
+/*team*/
+
+.pers_bloc	{
+	position: relative;
+	width: 50%;
+	height: 150px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+
+}
+
+.leftcontainer {
+	float: left;
+	width: 25%;
+}
+
+.picture	{
+	width: 110px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.txt_bloc	{
+	width: 70%;
+	float: left;
+	margin-left: 20px;
+	padding-top: 0px;
+	padding-left: 10px;
+	text-align: left;
+	box-sizing: border-box;
+	position: relative;
+	height: 100%;
+}
+
+.name{
+	margin-bottom: 5px;
+}
+
+.function{
+	margin-top:5px;
+	margin-bottom: 15px;
+}
+
+.project-role{
+	font-size: 12px;
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/*side bar*/
 
 #secondary {
 	display: block;
 	float: right;
     width: 20%;
 	margin-left: 2%;	
-	box-sizing: border-box;
 	margin-top: 5%;
+	padding-top: 10px;
+	box-sizing: border-box;
+	position: relative;
+	right: 0;
 }
-.sidebar-custom_el{
+.widget-area{
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .widget_text{
 	margin-bottom: 40px;
@@ -246,19 +384,19 @@ body {
 }
 .menu{
 	display: inline-block;
-	width: 150px;
+	width: 100%;
 	max-height: 80px;
-	margin: 0 30% 20px 30%;
-	text-align: center;
+	margin: 0 5% 20px 5%;
+	padding: 10px;
 	box-sizing: border-box;
 }
 .menu-button-text{
-	position: relative;
 	text-align: center;
-	max-width: 30%;
+	width: 50%;
 	float: left;
 	color: black;
 	padding: 0 10% 0 10%;
+	box-sizing: border-box;
 }
 
 /* Footer*/
