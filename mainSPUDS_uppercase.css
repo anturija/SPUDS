@@ -21,7 +21,6 @@ body {
 /* Navigation menu*/
 .nav_bar {
 	padding: 10px;
-	max-width: 50%;
 	max-height: 60px;
 	margin-top: 10px;
 	margin-bottom:40px;
@@ -135,7 +134,7 @@ body {
 #title{
 	display: block; 
 	float: left; 
-	max-width: 50%; 
+	max-width: 750px; 
 	font-size: 250%; 
 	padding: 10px 0; 
 	margin-right: 15px; 
@@ -202,7 +201,7 @@ body {
 	padding: 2px 15px 0 15px;
 	margin-left: 5%;
 	margin-right: 5%;
-	font-size: 120%;
+	font-size: 1.5em;
 	color: black;
 	box-sizing: border-box;
 	z-index:3;
@@ -226,50 +225,34 @@ body {
 }
 
 /*lists*/
-
-.reference{
-	display: block;
+.content p{
 	text-align: justify;
 	font-family: Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
 	line-height: 22px;
-	font-size: 13px;
-	margin-bottom: 10px;
-	margin-left: 16px;
-	box-sizing: border-box;
-	height: 130px;
-	position: relative;
 }
-
-.rsmall{
-	height: 100px;
-}
-
 
 .list{
 	color: ;
 }
 
 .title-type-el{
+	font-weight: 700;
     font-style: normal;
+    text-transform: uppercase;
 	color: #444;
 }
 
-.list-text {
-	margin-left: 48px;
-	display: block;
-	float: left;
-	width: 100%;
+.conf-name {
+	border-bottom: 1px solid;
 }
 
 .title-el{
-	display: block;
 	font-weight: bold;
-	margin: 0;
-	margin-left: 48px;
+	font-size: 1.2em;
 }
 	
-.date-el{
-	
+.date el{
+	font-size: 1.2em;
 	
 }
 
@@ -277,13 +260,6 @@ body {
 
 }
 
-.in {
-	font-style: italic;
-}
-
-.link{
-	font-size: .9em;
-}
 
 /*link in lists formating*/
 /* unvisited link */
@@ -360,8 +336,9 @@ body {
 .project-role{
 	font-size: 12px;
 	position: absolute;
-	bottom: 15px;
+	bottom:0;
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 /*side bar*/
@@ -422,7 +399,6 @@ body {
 	height: 28%;
 	/*background-color: #231f20;*/
 	clear: both;
-	font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
 }
 
 .hr_footer{
